@@ -71,16 +71,16 @@ void usercontrol(void) {
 void autonomous(void) {
 
   Drivetrain.setDriveVelocity(50, percent);
-  Drivetrain.driveFor(forward,5,inches);
 
-  // Drivetrain.setDriveVelocity(70, percent);
-
-  //Drivetrain.turnFor(6, degrees, true);
-  // Brain.Screen.print("Hello");
-  // Drivetrain.driveFor(forward,20,inches);
+  Drivetrain.driveFor(forward,1,inches);
+  wait(100, msec);
+  Drivetrain.turnFor(5.5, degrees, true);
+  wait(100, msec);
+  Drivetrain.setDriveVelocity(60, percent);
+  Drivetrain.driveFor(forward,7,inches);
   //release triball
 
-  // Drivetrain.driveFor(reverse,3,inches, true);
+  Drivetrain.driveFor(reverse,3,inches, true);
   // Drivetrain.turnFor(-6, degrees, true);
   
   // Drivetrain.driveFor(forward,7,inches, true);
