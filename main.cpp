@@ -28,9 +28,10 @@ competition Competition;
 
 // define your global instances of motors and other devices here
 
-const int wheelTravel = 101;
-const int trackWidth = 370;
-const int wheelBase = 330;
+const int wheelTravel = 319;
+const int trackWidth = 300;
+const int wheelBase = 273;
+//160
 
 motor_group LeftDriveGroup = motor_group(LeftFront, LeftMid, LeftBack);
 motor_group RightDriveGroup = motor_group(RightFront, RightMid, RightBack);  
@@ -64,7 +65,7 @@ void usercontrol(void) {
         RightDriveGroup.stop(brake);
       } 
       //shooting piston
-
+      wait(20,msec);
     }
 }
 
