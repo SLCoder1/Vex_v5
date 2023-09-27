@@ -11,12 +11,12 @@
 // Robot Configuration:
 // [Name]               [Type]        [Port(s)]
 // Controller1          controller                    
-// LeftFront            motor         11              
-// LeftMid              motor         12              
-// LeftBack             motor         13              
-// RightFront           motor         20              
-// RightMid             motor         19              
-// RightBack            motor         18              
+// LeftFront            motor         4               
+// LeftMid              motor         5               
+// LeftBack             motor         3               
+// RightFront           motor         7               
+// RightMid             motor         9               
+// RightBack            motor         8               
 // ---- END VEXCODE CONFIGURED DEVICES ----
 
 #include "vex.h"
@@ -27,7 +27,7 @@ using namespace vex;
 competition Competition;
 
 // define your global instances of motors and other devices here
-
+ 
 const int wheelTravel = 319;
 const int trackWidth = 300;
 const int wheelBase = 273;
